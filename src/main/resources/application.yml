@@ -1,0 +1,21 @@
+spring:
+  security:
+     user:
+       name: yuanshuai
+       password: dk
+  application:
+      name: eureka-server
+server:
+  port: 8081
+eureka:
+  instance:
+      hostname: eureka1
+      prefer-ip-address: false
+  client:
+      serviceUrl:
+          registerWithEureka: true
+          fetchRegistry: true
+          defaultZone: http://yuanshuai:dk@eureka2:8082/eureka/
+
+
+
